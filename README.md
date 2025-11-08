@@ -64,8 +64,15 @@ Antes de comenzar, asegúrate de tener instalado:
    ```
 
 5. **Poblar la base de datos con datos de ejemplo (opcional)**:
+   
+   **En Linux/Mac o Git Bash:**
    ```bash
    docker-compose exec -T db psql -U postgres -d biblioteca_db < app/data/seed.sql
+   ```
+   
+   **En Windows PowerShell:**
+   ```powershell
+   Get-Content app/data/seed.sql | docker-compose exec -T db psql -U postgres -d biblioteca_db
    ```
    
    Esto insertará 25 autores y más de 100 libros de ejemplo para que puedas probar la API inmediatamente.
@@ -108,8 +115,15 @@ Antes de comenzar, asegúrate de tener instalado:
    ```
 
 6. **Poblar la base de datos con datos de ejemplo (opcional)**:
+   
+   **En Linux/Mac o Git Bash:**
    ```bash
    psql -U postgres -d biblioteca_db < app/data/seed.sql
+   ```
+   
+   **En Windows PowerShell:**
+   ```powershell
+   Get-Content app/data/seed.sql | psql -U postgres -d biblioteca_db
    ```
    
    Esto insertará 25 autores y más de 100 libros de ejemplo para que puedas probar la API inmediatamente.
