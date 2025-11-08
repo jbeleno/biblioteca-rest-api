@@ -38,7 +38,7 @@ Antes de comenzar, asegúrate de tener instalado:
 1. **Clonar el repositorio**:
    ```bash
    git clone <url-del-repositorio>
-   cd prueba_tecnica
+   cd biblioteca-rest-api
    ```
 
 2. **Crear archivo de variables de entorno**:
@@ -66,7 +66,7 @@ Antes de comenzar, asegúrate de tener instalado:
 1. **Clonar el repositorio**:
    ```bash
    git clone <url-del-repositorio>
-   cd prueba_tecnica
+   cd biblioteca-rest-api
    ```
 
 2. **Crear un entorno virtual**:
@@ -267,7 +267,7 @@ Una vez que la aplicación esté ejecutándose, puedes acceder a la documentaci�
 ## Arquitectura del Proyecto
 
 ```
-biblioteca_api/
+biblioteca-rest-api/
 ├── app/
 │   ├── __init__.py
 │   ├── main.py           # Aplicación principal FastAPI
