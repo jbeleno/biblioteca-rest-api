@@ -6,7 +6,7 @@ API REST desarrollada con FastAPI para gestionar una biblioteca de libros y auto
 
 API REST para gestionar una biblioteca con las siguientes funcionalidades:
 
-- Gestión de libros y autores (CRUD)
+- Gestión de libros (CRUD)
 - Búsqueda por título o autor
 - Filtros por autor o año de publicación
 - Paginación
