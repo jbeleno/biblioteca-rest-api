@@ -53,8 +53,10 @@ Antes de comenzar, asegúrate de tener instalado:
    ```
 
    Esto iniciará:
-   - PostgreSQL en el puerto 5432
+   - PostgreSQL en el puerto 5435 (accesible desde tu máquina)
    - La API FastAPI en el puerto 8000
+
+   **Nota:** Los contenedores se comunican internamente usando el puerto 5432 de PostgreSQL, pero desde tu máquina accederás al puerto 5435.
 
 4. **Verificar que la aplicación está funcionando**:
    ```bash
@@ -230,6 +232,15 @@ Una vez que la aplicación esté ejecutándose, puedes acceder a la documentaci�
 
 - **Swagger UI**: http://localhost:8000/docs
 - **ReDoc**: http://localhost:8000/redoc
+
+## Acceso a los Servicios
+
+Cuando la aplicación esté corriendo, podrás acceder a:
+
+- **API REST**: http://localhost:8000
+- **Documentación Swagger**: http://localhost:8000/docs
+- **PostgreSQL** (si usas Docker): `localhost:5435`
+- **PostgreSQL** (si instalaste localmente): `localhost:5432`
 
 ## Modelo de Datos
 
