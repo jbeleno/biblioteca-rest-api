@@ -371,11 +371,4 @@ Varios puntos clave:
 
 La idea es tener **varias capas de seguridad**, no depender de una sola cosa.
 
-## Licencia
-
-Este proyecto fue desarrollado como parte de una prueba técnica.
-
-## Autor
-
-Desarrollado siguiendo las mejores prácticas de desarrollo backend con Python y FastAPI.
 
