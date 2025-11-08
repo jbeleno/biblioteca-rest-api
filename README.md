@@ -63,6 +63,13 @@ Antes de comenzar, asegúrate de tener instalado:
    curl http://localhost:8000/health
    ```
 
+5. **Poblar la base de datos con datos de ejemplo (opcional)**:
+   ```bash
+   docker-compose exec -T db psql -U postgres -d biblioteca_db < app/data/seed.sql
+   ```
+   
+   Esto insertará 25 autores y más de 100 libros de ejemplo para que puedas probar la API inmediatamente.
+
 ### Opción 2: Instalación Local (Sin Docker)
 
 1. **Clonar el repositorio**:
@@ -100,7 +107,14 @@ Antes de comenzar, asegúrate de tener instalado:
    python -c "from app.database import init_db; init_db()"
    ```
 
-6. **Ejecutar la aplicación**:
+6. **Poblar la base de datos con datos de ejemplo (opcional)**:
+   ```bash
+   psql -U postgres -d biblioteca_db < app/data/seed.sql
+   ```
+   
+   Esto insertará 25 autores y más de 100 libros de ejemplo para que puedas probar la API inmediatamente.
+
+7. **Ejecutar la aplicación**:
    ```bash
    uvicorn app.main:app --reload
    ```
